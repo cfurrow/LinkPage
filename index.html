@@ -7,11 +7,12 @@
     <link rel="stylesheet" type="text/css" href="styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="styles/text.css" />
     <link rel="stylesheet" type="text/css" href="styles/960_24_col.css" />
+    <link rel="stylesheet" type="text/css" href="styles/linkpage.css" />
   </head>
   <body>
     <div class="container_24">
       <div id="header">
-        <span class='description'>Type here to filter:</span></br>
+        <div class='description'>Type here to filter:</div>
         <input type="text" id="filter" /> 
       </div>
       <div id="content">
@@ -23,8 +24,8 @@
         </div> 
         <div class="column grid_6">
         </div> 
+        <div class='clear'></div>
       </div>
-      <div class='clear'></div>
       <div id="footer">
         Author: <a href="http://carlfurrow.com">Carl Furrow</a>
       </div>
@@ -35,7 +36,9 @@
     <script type="text/javascript" src="scripts/dummy.js"></script>
     <script type="text/javascript">
       $(function(){
-        linkpage.attach_keyup($("#filter"));
+        var $filter = $("#filter");
+        $filter.focus();
+        linkpage.attach_keyup($filter);
         dummy.create();
       });
     </script>
