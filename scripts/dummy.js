@@ -26,7 +26,8 @@ var dummy = (function(){
       var j =0;
       for(;j<num_links;j++){
           var random_link_index = Math.floor(Math.random()*link_text_options.length);
-          $ul.append("<li><a href='#'>"+link_text_options[random_link_index].replace(/%replace%/,categories[i])+"</a></li>");
+          var link_text = link_text_options[random_link_index].replace(/%replace%/,categories[i]);
+          $ul.append("<li><a href='#'>"+link_text+"</a></li>");
       }
 
       // append $ul to a column
