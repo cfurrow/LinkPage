@@ -11,7 +11,8 @@ var dummy = (function(){
       "%replace% is at the forefront of Web 3.0",
       "I can't believe people still use %replace%",
       "Top 10 reasons to use %replace%",
-      "Top 11 reasons not to use %replace%"
+      "Top 11 reasons not to use %replace%",
+      "%replace%, what the heck is it?"
   ];
 
   pub.create = function(){
