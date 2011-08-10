@@ -15,6 +15,7 @@ var dummy = (function(){
       "%replace%, what the heck is it?"
   ];
 
+  // Create the dummy links, and drop them into the page
   pub.create = function(){
     var len = tags.length;
     var i=0;
